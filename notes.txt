@@ -1,0 +1,2 @@
+cd humorquotes
+scrapy genspider example example.com
