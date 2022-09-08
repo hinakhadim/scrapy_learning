@@ -6,7 +6,11 @@
 import scrapy
 
 
-class HumorquotesItem(scrapy.Item):
+class PythonPostItems(scrapy.Item):
     # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+    title = scrapy.Field()
+    post_type = scrapy.Field()
+    post_link = scrapy.Field()
+    votes = scrapy.Field()
+    post_text = scrapy.Field()
+    comments_count = scrapy.Field()
