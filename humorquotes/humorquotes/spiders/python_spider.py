@@ -34,14 +34,14 @@ class PythonPostSpider(scrapy.Spider):
         return post_item
 
     def get_post_text(self, post):
-        post_text_list = post.css(
+        html_posts_list = post.css(
             'a[data-click-id="body"] div[data-click-id="text"] div p::text')
-        .getall()
+        post_list = html_posts_list.getall()
 
-        if post_text_list is None:
+        if post_list is None:
             return ""
 
-        return "".join(post_text_list)
+        return "".join(post_list)
 
     def get_post_link(self, title_div, response):
         post_link = title_div.css(

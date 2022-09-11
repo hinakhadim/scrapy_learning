@@ -1,0 +1,7 @@
+{
+    "python.linting.enabled": true,
+    "python.linting.pycodestyleEnabled": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "python.formatting.provider": "autopep8",
+}
